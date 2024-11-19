@@ -1,0 +1,6 @@
+[submodule "lib/ines_sdk_c"]
+	path = lib/ines_sdk_c
+	url = https://github.com/sealsq/ines_sdk_c.git
+[submodule "lib/wolfMQTT"]
+	path = lib/wolfMQTT
+	url = https://github.com/wolfSSL/wolfMQTT.git
