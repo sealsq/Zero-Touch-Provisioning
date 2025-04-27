@@ -144,7 +144,19 @@ void main(int argc, char *argv[])
     /* Extract the data from the config file */
     config_values_t config;
     initConfigFile(&config);
-    parseConfigFile(argv[1], &config);
+
+    for (int i = 0; i < argc; i++) {
+        
+        if(strcmp(argv[i],"-c")==0)
+        {
+            if(argv[i+1]!=NULL)
+            {
+                ret = parseConfigFile(argv[i+1], &config);
+            }
+
+        }
+    }
+
 
     wkey_log(LOG_STEP_INDICATOR,"INES DEMOS INITIALIZED");
 
