@@ -130,7 +130,7 @@ static int mqtt_aws_tls_cb(MqttClient* client)
 #if defined(TARGETCHIP_VAULTIC_408)
                 set_CurrenVaultickeyIndex(ECC_OPERATIONAL_Privk_Index);
 #elif defined(TARGETCHIP_VAULTIC_292)
-        vlt_tls_select_static_priv_key(VAULTIC_OPERATIONAL_KEY_INDEX);
+                set_CurrenVaultickeyIndex(VAULTIC_OPERATIONAL_KEY_INDEX);
 #endif
 
                 if ((rc =  wolfSSL_CTX_use_certificate_file(client->tls.ctx, configfile.DEVICE_CERT_PATH,SSL_FILETYPE_PEM))

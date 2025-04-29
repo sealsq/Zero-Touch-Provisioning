@@ -1,4 +1,4 @@
-# Zero Touch Povisioning Demonstrator
+# Zero Touch Provisioning Demonstrator
 
 ## Introduction
 
@@ -10,6 +10,7 @@ This significantly reduces the operational burden and simplifies the  overall  â
 
 - INeS Account
 - Raspberry Pi 4
+- An access to git.sealsq.com (ask sales@sealsq.com to get an account)
 
 
 
