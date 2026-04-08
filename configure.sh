@@ -96,7 +96,6 @@ buildapp()
 ############################################################
 # Get the options
 
-source ZTP.cfg
 
 while getopts ":hbizg" option; do
    case $option in
