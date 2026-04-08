@@ -21,17 +21,9 @@ Help()
    echo
 }
 
-checkoutLibs()
-{   
-   pushd "lib/ines_sdk_c"
-   #echo "----------| Checkout to INeS VERSION : ${INES_SDK_TAG} |----------"
-   #git checkout ${INES_SDK_TAG}   
-   popd
-
-   pushd "lib/wolfMQTT"
-   echo "----------| Checkout to WOLFMQTT VERSION : ${WOLFMQTT_TAG} |----------"
-   git checkout ${WOLFMQTT_TAG}   
-   popd
+copyVaultic()
+{  
+   cp include/vaultic_tls_config_292.h lib/ines_sdk_c/lib/libVaultIC/292/DEVKIT_VIC292_TLS_RPI/VaultIC-TLS/vaultic_tls/vaultic_tls-2xx/src/vaultic_tls_config.h 
 }
 
 install()
@@ -40,7 +32,7 @@ install()
    sudo apt-get --yes --force-yes install cmake	
    sudo apt-get --yes --force-yes install python3
    configureZTPlib
-   checkoutLibs
+   copyVaultic
    echo done, remove this file if you want to do first setup again > ${FIRST_CONFIG_FILE}
 
 
