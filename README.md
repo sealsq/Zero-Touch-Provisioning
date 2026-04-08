@@ -59,7 +59,7 @@ clone this Repo :
 
 update submodule
 
-    git submodule update --init
+    git submodule update --init --recursive
 
 We write scripts to simplify compilation, so make them executable
 
